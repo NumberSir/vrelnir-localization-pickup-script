@@ -150,7 +150,7 @@ export class CoreProcess {
         console.info(`[INFO] Starting to get all widgets' info ...`)
         let allWidgetsInfo: WidgetInfo[] = [];
         const widgetPattern = /<<widget[\s\S]*?>>/g;
-        const widgetNamePattern = /<<widget\s*["'`](.*?)["'`][\s\S]*?>>/g
+        const widgetNamePattern = /<<widget\s*["'`](.*?)["'`][\s\S]*?>>/
 
         for (const passage of allPassages) {
             const allWidgets = passage.passageBody.matchAll(widgetPattern);
@@ -176,7 +176,7 @@ export class CoreProcess {
                     filepath: passage.filepath,
                     isNeededClose: isNeededClose,
                     passageName: passage.passageName,
-                    widgetName: widgetNameMatch[0]
+                    widgetName: widgetNameMatch[1]
                 })
             }
         }
