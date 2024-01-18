@@ -22,7 +22,11 @@ export const DIR_SRC = path.join(DIR_ROOT, "src")
 export const DIR_DOL_ROOT = path.join(DIR_SRC, "modules/degrees-of-lewdity")    // 游戏源代码位置
 export const DIR_DOL_GAME = path.join(DIR_DOL_ROOT, "game")                     // 游戏源代码里绝大部分 twee 和 js 文件位置
 
+export const DIR_TEMP = path.join(DIR_DATA, "tmp")
+export const DIR_OUTPUT = path.join(DIR_ROOT, "output")  // 一些输出的文件存放在这里
+
 /* TOKENS */
+// sourcery skip: use-object-destructuring
 export const PARATRANZ_PROJECT_ID = 4780
 export const PARATRANZ_TOKEN = process.env.PARATRANZ_TOKEN
 export const GITHUB_REPO_OWNER = "Eltirosto"

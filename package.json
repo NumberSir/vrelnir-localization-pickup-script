@@ -4,8 +4,11 @@
   "description": "",
   "private": true,
   "scripts": {
-    "ts:tools-build-credits": "tsc -p ./tools/credits/tsconfig.json",
-    "tools-run-credits": "node ./dist-tools/main.js"
+    "tools-build-credits": "tsc -p ./tools/credits/tsconfig.json",
+    "tools-run-credits": "node ./dist-tools/credits.js",
+    "==================================================": "",
+    "core-build": "tsc -p ./src/tsconfig.json",
+    "core-run": "node ./dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +16,10 @@
   "dependencies": {
     "axios": "^1.6.3",
     "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.3.1",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "xpath": "^0.0.34"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
