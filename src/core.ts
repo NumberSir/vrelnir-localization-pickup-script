@@ -168,7 +168,7 @@ export class CoreProcess {
 
                 let isNeededClose = false;
                 if (widgetFull.includes("container>>")) {
-                    const isNeededClose = true;  // 需要闭合
+                    isNeededClose = true;  // 需要闭合
                 }
 
                 allWidgetsInfo.push({
